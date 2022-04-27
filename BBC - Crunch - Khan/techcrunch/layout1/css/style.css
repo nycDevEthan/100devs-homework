@@ -1,0 +1,206 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
+.main-sub-heading {
+  color: #a0a0a0;
+}
+
+p {
+  color: #a0a0a0;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+nav, main, aside {
+  width: 10%;
+  float: left;
+  padding: 20px;
+}
+
+nav {
+  height: 685px;
+  width: 12.5%;
+}
+
+.top-nav{
+  font-size: 1.25rem;
+  line-height: 40px;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+  font-size: 1.5rem;
+  line-height: 40px;
+}
+
+.ul-last-item {
+  display: inline-block;
+  border-top: 2px solid #aeaeae;
+}
+
+main {
+  height: 60%;
+  width: 55%;
+}
+
+main span {
+  display: block;
+  margin: 5px 0;
+}
+
+main img{
+  max-width: 100%;
+  height: auto;
+}
+
+aside {
+  height: 50%;
+  width: 25%;
+}
+
+aside article {
+  border-bottom: 2px solid #eeeeee;
+}
+
+aside article:last-child {
+  border: none;
+}
+
+aside span {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+section {
+  float: left;
+  width: 80%;
+}
+
+.container {
+  height: auto;
+  margin-left: 12.5%;
+  border-top: 2px solid #dbd6cf;
+  padding: 10px 0;
+}
+
+section section {
+  width: 31%;
+  height: auto;
+  margin: 10px;
+}
+
+section section p {
+  font-size: 1.25rem;
+}
+
+.author {
+  display: inline-block;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  float: right;
+}
+
+a:link {
+  text-decoration: none;
+  color: #a0a0a0;
+}
+
+a:link.extra-crunch{
+  color: #f6a623;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (max-width: 1245px) {
+  nav {
+    display: none;
+  }
+
+  .container {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1244px) {
+  main {
+    width: 49.9999%;
+  }
+
+  aside {
+    width: 49.9999%;
+  }
+
+  .container {
+    width: 99.9999%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    width: auto;
+  }
+
+  aside {
+    width: auto;
+  }
+
+  aside article {
+    width: auto;
+  }
+
+  .container {
+    width: auto;
+  }
+
+  .container section {
+    width: auto;
+  }
+}
