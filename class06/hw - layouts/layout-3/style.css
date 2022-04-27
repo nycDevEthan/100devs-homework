@@ -1,0 +1,32 @@
+* {
+    background: #dcdcdc;
+    box-sizing: border-box;
+}
+
+header, footer {
+    height: 200px;
+    border: 2px solid #a2a2a2;
+    clear: both;
+}
+
+.col-1-5-left {
+    height: 500px;
+    width: 19.99%;
+    border: 2px solid #a2a2a2;
+    float: left;
+}
+
+.col-2-5 {
+    height: 500px;
+    width: 39.99%;
+    border: 2px solid #a2a2a2;
+    float: left;
+}
+
+
+.col-1-5-right {
+    height: 500px;
+    width: 19.99%;
+    border: 2px solid #a2a2a2;
+    float: left;
+}

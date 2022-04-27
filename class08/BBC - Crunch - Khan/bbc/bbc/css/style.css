@@ -1,0 +1,291 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-size: 62.5%;
+}
+
+.top-news-text {
+  color: whitesmoke;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+ font-size: 2rem;
+}
+
+
+p, span {
+  font-size: 1.25rem;
+}
+
+#news {
+  border-left: 4px solid red;
+  padding: 0 10px;
+}
+
+span {
+  border-left: 4px solid red;
+  padding: 0 10px;
+  margin-left: 5px;
+}
+
+form {
+  font-size: 2rem;
+  padding-top: 5px;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: 55px;
+  background: black;
+  color: white;
+}
+
+header img {
+  height: 55px;
+  border-right: 2px solid white;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+nav *{
+  float: left;
+  width: 10%;
+  color: white;
+  display: block;
+}
+
+nav ul {
+  width: 80%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+nav ul li {
+  width: 10%;
+  padding: 15px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+nav ul li a {
+  width: 100%;
+  text-decoration: none;
+}
+
+nav form input {
+  width: 100%;
+}
+
+main > h2 {
+  display: block;
+  float: left;
+  width: 50%;
+
+}
+
+/* section {
+  border: 2px solid black;
+} */
+
+#welcome {
+  width: 50%;
+  text-align: left;
+  padding-left: 15px;
+  margin: 0;
+}
+
+#date {
+  width: 50%;
+  text-align: right;
+  padding: 0 15px 15px 0;
+  margin: 0;
+}
+
+.top-news-container {
+  margin-left: 15px;
+  height: auto;
+  width: 50%;
+}
+
+.top-news > article {
+  margin-top: 25%;
+}
+
+#news {
+  width: 100%;
+  margin: 0;
+}
+
+.bottom-news-container {
+  margin: 0 0 15px 15px;
+  height: auto;
+}
+
+#bottom-news {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  margin: 0;
+}
+
+.bottom-news {
+  width: 31%;
+  height: auto;
+  margin: 15px;
+}
+
+main + section > section {
+  width: 33.3333%;
+  float: left;
+}
+
+main > section {
+  width: 45%;
+  height: 550px;
+  float: left;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+main section + section section {
+  width: 48%;
+  height: 250px;
+  float: left;
+  /* border: 2px solid black; */
+}
+
+#main-story{
+  background: url("../images/deal.jpg") no-repeat grey;
+  background-position: center;
+  background-size: 100% auto;
+  height: auto;
+  margin: 0 15px;
+}
+
+#main-story > article {
+  margin-top: 25%;
+}
+
+main > section section{
+  background: url("../images/border.jpg") no-repeat grey;
+  background-position: center;
+  background-size: 100% auto;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+main > section section + section{
+  background: url("../images/vaccine.jpg") no-repeat grey;
+  background-position: center;
+  background-size: 100% auto;
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+main > section section + section + section{
+  background: url("../images/home_office.jpg") no-repeat grey;
+  background-position: center;
+  background-size: 100% auto;
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-left: 0;
+}
+
+main > section section + section + section + section{
+  background: url("../images/artist.jpg") no-repeat grey;
+  background-position: center;
+  background-size: 100% auto;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (max-width: 1516px) {
+
+  #date {
+    margin: 0;
+  }
+
+  #main-story {
+    width: 49%;
+    margin: 5px;
+  }
+
+  .top-news-container {
+    width: 49%;
+    margin: 5px;
+  }
+
+  .top-news {
+    width: 49%;
+    padding: 0;
+    margin: 1px;
+  }
+
+  .top-news-text {
+    margin: 0;
+  }
+
+  #news {
+    height: 50px;
+    border-left: 2px solid red;
+  }
+
+  #news > h2 {
+    margin: 0;
+  }
+
+  article {
+    margin: 0;
+  }
+}
+
+/* @media screen and (max-width: 1325px) {
+  #news > h2{
+    margin: 0;
+  }
+  
+  .bottom-news {
+    width: 32%;
+    margin: 5px;
+  }
+} */
